@@ -13,6 +13,9 @@ def dividir(a, b):
     else:
         return "Error: Division entre 0 no permitida"
     
+def potencia(a, b):
+    return a ** b
+    
 print("=== Calculadora Basica===")
 print("Operaciones disponibles: +, -, *, /")
 
@@ -29,6 +32,8 @@ elif operador == "*":
     resultado = multiplicar(num1, num2)
 elif operador == "/":
     resultado = dividir(num1, num2)
+elif operador == "**":
+    resultado = potencia(num1, num2)
 else:
     resultado = "Operacion No valida"
 
