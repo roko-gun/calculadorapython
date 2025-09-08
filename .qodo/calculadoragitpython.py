@@ -15,6 +15,9 @@ def dividir(a, b):
     
 def potencia(a, b):
     return a ** b
+
+def cubo(a):
+    return a ** 3
     
 print("=== Calculadora Basica===")
 print("Operaciones disponibles: +, -, *, /")
@@ -22,20 +25,22 @@ print("Operaciones disponibles: +, -, *, /")
 # pedimos los datos al usuario 
 num1 = float(input('ingrese el primer numero:'))
 operador = input("ingrese la operacion (+, -, *, /): ")
-num2 = float(input('Ingrese el segundo numero:'))
-
-if operador == "+":
-    resultado = sumar(num1, num2)
-elif operador == "-":
-    resultado = restar(num1, num2)
-elif operador == "*":
-    resultado = multiplicar(num1, num2)
-elif operador == "/":
-    resultado = dividir(num1, num2)
-elif operador == "**":
-    resultado = potencia(num1, num2)
+if operador == "³":
+    resultado = cubo(num1)
 else:
-    resultado = "Operacion No valida"
+    num2 = float(input('Ingrese el segundo numero:'))
+    if operador == "+":
+        resultado = sumar(num1, num2)
+    elif operador == "-":
+        resultado = restar(num1, num2)
+    elif operador == "*":
+        resultado = multiplicar(num1, num2)
+    elif operador == "/":
+        resultado = dividir(num1, num2)
+    elif operador == "^":
+        resultado = potencia(num1, num2)
+    else:
+        resultado = "Operacion No valida"
 
 print ("Resultado:", resultado)
 
