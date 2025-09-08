@@ -20,7 +20,7 @@ def cubo(a):
     return a ** 3
     
 print("=== Calculadora Basica===")
-print("Operaciones disponibles: +, -, *, /")
+print("Operaciones disponibles: +, -, *, /, **, ³")
 
 # pedimos los datos al usuario 
 num1 = float(input('ingrese el primer numero:'))
